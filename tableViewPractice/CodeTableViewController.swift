@@ -19,7 +19,7 @@ class CodeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 50
+        tableView.rowHeight = 40
     }
     
     // MARK: - Table view data source
@@ -40,6 +40,7 @@ class CodeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "viewCell")!
         cell.textLabel?.text = SectionList[indexPath.section][indexPath.row]
+        cell.textLabel?.font = .systemFont(ofSize: 12)
         return cell
     }
 }
