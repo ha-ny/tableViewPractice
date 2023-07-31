@@ -14,7 +14,6 @@ class AddListTableViewController: UITableViewController {
     @IBOutlet var listTextField: UITextField!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         tableView.rowHeight = 60
     }
 
